@@ -1,5 +1,5 @@
 let sz = 20;
-let binnum = "111000111";
+let binnum = "101000101";
 let cnv;
 function setup() {
   cnv = createCanvas(900, 900);
@@ -56,10 +56,10 @@ function drawShape(x, y, d, depth) {
   fill(0);
   noStroke();
 
-  rect(x, y, sz - 1, sz - 1);
+  //rect(x, y, sz - 1, sz - 1);
 
   //print(d)
-  if (depth > 0 && d < width) {
+  if (depth >= 0 && d < width) {
     let newD = d * 3; // need to the steps
     if (binnum[0] == "1") {
       drawShape(x - d, y - d, newD, depth - 1); // top left
@@ -92,5 +92,5 @@ function drawShape(x, y, d, depth) {
     }
   }
 
-  //rect(x,y,sz,sz)
+  rect(x, y, sz - 1, sz - 1);
 }

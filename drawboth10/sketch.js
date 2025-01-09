@@ -1,5 +1,5 @@
 let sz = 20;
-let binnum = "111000111";
+let binnum = "101010101";
 let cnv;
 function setup() {
   cnv = createCanvas(900, 900);
@@ -40,7 +40,7 @@ function doit() {
   sz = width / 3 ** dep;
   print(sz);
   let d = sz;
-  drawShape(width / 2, height / 2, d, dep);
+  drawShape(width / 2, height / 2, d, dep, 0);
   print(binnum[4]);
   // take care of the center square if it is zero
   if (binnum[4] == "0") {
@@ -50,12 +50,12 @@ function doit() {
   }
 }
 
-function drawShape(x, y, d, depth, clr) {
+function drawShape(x, y, d, depth, clr = 0) {
   // d is disance to place the shape/ sz
-  if (clr === 1) {
+  if (clr == 1) {
     fill(0);
   } else {
-    fill(1);
+    fill(255);
   }
   noStroke();
 
