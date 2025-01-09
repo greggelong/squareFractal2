@@ -1,10 +1,26 @@
 let sz = 20;
-let binnum = "111101101";
+let binnum = "111000111";
+let cnv;
 function setup() {
-  createCanvas(900, 900);
+  cnv = createCanvas(900, 900);
+  pixelDensity(1);
+  let cx = (windowWidth - cnv.width) / 2;
+  let cy = (windowHeight - cnv.height) / 2;
+  cnv.position(cx, cy);
   background(127);
   rectMode(CENTER);
-  let dep = 5;
+  mySelect = createSelect();
+  mySelect.position(0, 100);
+
+  // Add color options.
+  mySelect.option(1);
+  mySelect.option(2);
+  mySelect.option(3);
+  mySelect.option(4);
+  mySelect.option(5);
+  mySelect.changed(doit);
+  doit();
+  /* let dep = 5;
   sz = width / 3 ** dep;
   print(sz);
   let d = sz;
@@ -13,6 +29,22 @@ function setup() {
   // take care of the center square if it is zero
   if (binnum[4] == "0") {
     fill(127);
+    noStroke();
+    rect(width / 2, height / 2, sz, sz);
+  } */
+}
+
+function doit() {
+  background(255);
+  let dep = mySelect.value();
+  sz = width / 3 ** dep;
+  print(sz);
+  let d = sz;
+  drawShape(width / 2, height / 2, d, dep);
+  print(binnum[4]);
+  // take care of the center square if it is zero
+  if (binnum[4] == "0") {
+    fill(255);
     noStroke();
     rect(width / 2, height / 2, sz, sz);
   }
