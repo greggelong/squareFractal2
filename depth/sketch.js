@@ -1,5 +1,5 @@
 let sz = 20;
-let binnum = "101000101";
+let binnum = "111101101";
 let cnv;
 function setup() {
   cnv = createCanvas(900, 900);

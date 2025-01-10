@@ -30,7 +30,7 @@ but now I am thinking it may be ok if that middle piece is still there as from s
 
 I have now satisfied myself that this is correct by using the feldman star and a feldman star without a center piece
 
-101010101 snf 101000101
+101010101 and 101000101
 
 ```
 101
@@ -47,3 +47,7 @@ I have now satisfied myself that this is correct by using the feldman star and a
 000000000
 101000101
 ```
+
+in the above feldman star with out a center. step 2 will have something in the center as we have moved out a level expanded so the original missing piece is still there.
+
+this is different than just cutting out each original block
