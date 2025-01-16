@@ -10,7 +10,16 @@ function setup() {
   background(127);
   rectMode(CENTER);
   mySelect = createSelect();
-  mySelect.position(0, 100);
+  mySelect.position(10, 140);
+  mySelect.style("font-size", "60px"); // Larger font size
+  mySelect.style("width", "120px"); // Wider dropdown
+  mySelect.style("height", "120px"); // Taller dropdown
+  mySelect.style("padding", "20px"); // Add padding
+  mySelect.style("border", "2px solid black"); // Add a border
+  mySelect.style("outline", "2px solid blue"); // Add an outline
+  mySelect.style("background-color", "#f0f0f0"); // Set background color
+  mySelect.style("border-radius", "10px"); // Add rounded corners
+  mySelect.style("box-shadow", "5px 5px 15px rgba(0, 0, 0, 0.2)"); // Add a shadow effect
 
   // Add color options.
   mySelect.option(1);
