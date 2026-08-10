@@ -51,3 +51,8 @@ I have now satisfied myself that this is correct by using the feldman star and a
 in the above feldman star with out a center. step 2 will have something in the center as we have moved out a level expanded so the original missing piece is still there.
 
 this is different than just cutting out each original block
+
+[https://greggelong.github.io/squareFractal2/depth]
+
+[https://greggelong.github.io/squareFractal2/drawboth10]
+
